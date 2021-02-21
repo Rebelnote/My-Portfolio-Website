@@ -1,0 +1,310 @@
+/* Affects entire document */
+html {
+    scroll-behavior: smooth; /* This ensures that the page scrolling is smooth when the nav bar is clicked */
+  }
+
+/*Heading Styles*/
+
+h1, h2 {
+    font-family: Koho;
+}
+
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+  /* Body */
+body {
+    margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
+    opacity: 1; /* This and transition affect the page loading fade in effect */
+    transition: 3s opacity; /* This causes a 3 second fade in, you can change this time if you choose */
+	letter-spacing: .2vw;
+    font-family: 'Poiret One', sans-serif;
+    font-size: 14px;
+    color: #7C7A7A;
+    }
+
+.mainHeading {  /*This formats the main banner background image*/
+    background-image: url("Images/pastelrainbow.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+    padding-bottom: 100px;
+}
+    
+    /* Navbar */
+.navBar {
+	background-color: rgb(124, 122, 122); /* This colors the navbar black */
+	top: 0; /* This ensures no space is displayed above the navbar */
+	width: 100%; /* This makes the navbar span the entire width of the page */
+	z-index: 1; /*This ensures other elements don't display over the navbar */
+}
+
+/* Navbar text */
+.navBar a {
+	float: center; /* This specifies that the text floats on the left on the navbar */
+	display: inline-block; /* This ensures that other text will be displayed on the same line or row, instead of a new line */
+	color: white; /* This is the font color for text on our navbar */
+	padding: .75vw 1vw; /* This adds padding around our text */
+    text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
+    text-transform: uppercase;
+	font-family: 'KoHo', sans-serif; /* This specifies the font family for text on our navbar */
+	font-size: 12px; /* This specifies the font size for text on our navbar */
+    text-align: center; /* This centers the text within its container */
+    font-weight: 600;
+    position: relative;
+	-webkit-animation: movenavText 2.75s; /* Safari 4.0 - 8.0 */
+    animation: movenavText 2.75s;
+	letter-spacing: .2vw;
+}
+
+/* Navbar Text a:focus, a:hover  */
+
+.navBar a:visited {
+    color: white;
+    font-weight: 600;
+    background-color: #cc0052;   
+}
+
+.navBar a:focus {
+    color: white;
+    font-weight: 600;
+    background-color: #cc0052;
+}
+
+.navBar a:hover {
+    color: white;
+    font-weight: 600;
+    background-color: #D1ABCC;
+    transition-duration: .5s;
+}
+
+.active {
+    color: white;
+    font-weight: 600;
+    background-color: #cc0052;
+}
+
+.greeting {
+    padding-top: 200px;
+}
+
+/* Button underneath greeting */
+.mainButton {
+    margin-top: 25px;
+    /*margin-bottom: 175px; */ /* Creates space underneath of button*/ 
+    background: transparent;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 600;
+    letter-spacing: .2vw;
+    border: solid;
+    color: rgb(124, 122, 122);
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+
+  }
+
+  .mainButton:hover {
+      background: rgb(124, 122, 122);
+      color: white;
+      border: solid;
+      border-color: rgb(124, 122, 122);
+      transition-duration: .5s;
+  }
+
+  .bio {
+      
+  }
+  .bio h2 {
+      margin-bottom: 75px;
+  }
+
+  .aboutColumns {
+      display: inline-flex;
+      position: center;
+      justify-content: space-around;
+      margin-bottom: 200px;
+  }
+
+  .bioColumns h3 {
+      font-size: 1.3vw;
+      font-weight: 600;
+  }
+
+  .bioColumns p {
+      margin-left: 25px;
+      margin-right: 25px;
+      font-size: 1.1vw;
+  }
+
+  .bioColumns img {
+      width: 6.8vw;
+      height: auto;
+  }
+
+  .profile {
+    display: inline-flex;
+    position: center;
+    justify-content: space-around;
+    margin: 100px 100px 100px 100px;
+  }
+
+  .aboutMe {
+      padding: 100px, 100px, 100px, 100px;
+      justify-content: space-around;
+      position: center;
+      padding: 0px 200px 0px 200px;
+  }
+
+  .aboutMe img {
+    border-radius: 150px;
+  }
+
+  .profile img {
+      max-width: 250px;
+  }
+
+    /* Contact Form Elements */
+
+  form {
+      margin-top:50px;
+      transition: all 4s ease-in-out;
+  }
+  .form_box {
+  }
+
+  .form-control {
+      width: 400px;
+      text-align: center;
+      background: #f8f8ff;
+      border: 5px;
+      border-radius: 25px;
+      color: rgb(124, 122, 122);
+      font-size: 14px;
+      margin-bottom: 16px;
+      font-family: Poiret One;
+
+  }
+  /* this seperates the message input so I can customize it */
+    .form-control-message {
+      width: 400px;
+      text-align: center;
+      background: #f8f8ff;
+      border: 5px;
+      border-radius: 25px;
+      color: rgb(124, 122, 122);
+      font-size: 14px;
+      margin-bottom: 16px;
+      height: 80px;
+      resize: vertical;
+      box-sizing: border-box;
+      overflow-y: scroll;
+      font-family: Poiret One;
+  }
+
+  input {
+      height: 45px;
+  }
+
+  form .submit {
+      background: #cc0052;
+      border-color: transparent;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 2px;
+      height: 30px;
+      margin-top: 20px;
+  }
+
+  form .submit:hover {
+      background-color: #D1ABCC;
+      cursor: pointer;
+      }
+
+  footer {
+    background-color: rgb(124, 122, 122);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    position: fixed;
+    margin-bottom: 0%;
+  
+  }
+
+  footer a:link {
+      color: lightblue;
+      text-decoration: none;
+  }
+
+  footer :active:hover {
+      color: #D1ABCC; 
+  }
+
+  /*Responsive Design Elements*/
+
+  @media only screen and (max-width:768px) {
+    .navBar a {
+        line-height: 2em;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 18;
+    }
+
+    /*
+    .mainHeading{
+    margin-top: -100px;
+    padding-bottom: 15vw;
+
+    }*/
+  }
+
+  @media only screen and (max-width:480px){
+    .navBar { /*this changes the nav menu from horizontal, inline display to vertical, and block display */
+        display: block;
+        color: #fff;
+        font-size: 2em;
+        }
+
+    .mainHeading{
+        margin-top: -150px;
+        padding-bottom: 50px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 11;
+    }
+
+    .navBar a {
+        display: block;
+        border-top: 1px solid rgba(255, 255, 255, .2);
+        float: none;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .mainButton{
+        font-size: 1em;
+    }
+
+
+}
