@@ -98,25 +98,24 @@ body {
 .mainButton {
     margin-top: 25px;
     /*margin-bottom: 175px; */ /* Creates space underneath of button*/ 
-    background: transparent;
+    background: #cc0052;
     font-family: 'KoHo', sans-serif;
     font-weight: 600;
     letter-spacing: .2vw;
-    border: solid;
-    color: rgb(124, 122, 122);
-    padding: 2px 5px;
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 12px;
     position: relative;
-
+    border-radius: 25px;
+    text-transform: uppercase;
   }
 
   .mainButton:hover {
-      background: rgb(124, 122, 122);
+      background: #D1ABCC;
       color: white;
-      border: solid;
-      border-color: rgb(124, 122, 122);
       transition-duration: .5s;
   }
 
@@ -178,8 +177,7 @@ body {
       margin-top:50px;
       transition: all 4s ease-in-out;
   }
-  .form_box {
-  }
+
 
   .form-control {
       width: 400px;
@@ -222,6 +220,8 @@ body {
       letter-spacing: 2px;
       height: 30px;
       margin-top: 20px;
+      font-family: Koho;
+      text-transform: uppercase;
   }
 
   form .submit:hover {
@@ -232,20 +232,20 @@ body {
   footer {
     background-color: rgb(124, 122, 122);
     color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
     position: fixed;
-    margin-bottom: 0%;
-  
+    line-height: 25px;
   }
 
-  footer a:link {
-      color: lightblue;
+  footer a {
+      color: white;
       text-decoration: none;
+
   }
 
-  footer :active:hover {
+  footer a:hover {
       color: #D1ABCC; 
   }
 
